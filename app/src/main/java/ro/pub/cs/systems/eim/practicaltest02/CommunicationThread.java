@@ -55,12 +55,6 @@ public class CommunicationThread extends Thread {
                 return;
             }
 
-            if ((post_key != null && !post_key.isEmpty()) &&
-                    (post_value == null || post_value.isEmpty())) {
-                Log.e(Constants.TAG, "3 [COMMUNICATION THREAD] Error receiving parameters from client!");
-                return;
-            }
-
             if (thread.getMap().containsKey(post_key)) {
                 Log.i(Constants.TAG, "4 [COMMUNICATION THREAD] We have a POST request value " + thread.getMap().get(post_key));
                 return;
@@ -89,6 +83,12 @@ public class CommunicationThread extends Thread {
                 // make the HTTP request to the web service
 
                 thread.getMap().put(post_key, post_value);
+                String result = thread.getMap().get(get_key);
+
+                System.out.println(thread.getMap().get(post_key));
+
+                writer.println(result);
+                writer.flush();
                 return;
 
             }

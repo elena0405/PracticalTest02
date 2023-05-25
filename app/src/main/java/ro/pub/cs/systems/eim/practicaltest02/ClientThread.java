@@ -44,6 +44,11 @@ public class ClientThread extends Thread {
             printWriter.println(get_key);
             printWriter.flush();
 
+            String line = bufferedReader.readLine();
+            String line2 = bufferedReader.readLine();
+
+            System.out.println(line + " " + line2);
+
         } // if an exception occurs, it is logged
         catch (IOException ioException) {
             Log.e(Constants.TAG, "[CLIENT THREAD] An exception has occurred: " + ioException.getMessage());

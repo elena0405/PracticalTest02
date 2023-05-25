@@ -7,8 +7,9 @@
     <string name="client_port">PORT</string>
     <string name="client_ip">IP ADDRESS</string>
     <string name="connect_client">CONNECT CLIENT</string>
-    <string name="client_key">CLIENT KEY</string>
+    <string name="client_key">KEY</string>
     <string name="get_value">GET</string>
+    <string name="client_value">VALUE</string>
     <string name="post">POST</string>
 
 

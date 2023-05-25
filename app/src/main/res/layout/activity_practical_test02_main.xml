@@ -67,6 +67,14 @@
             tools:ignore="MissingConstraints">
         </EditText>
 
+        <EditText
+            android:id="@+id/client_post_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/client_value"
+            tools:ignore="MissingConstraints">
+        </EditText>
+
 
         <Button
             android:id="@+id/connect_client"
